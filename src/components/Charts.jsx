@@ -54,6 +54,7 @@ function Charts({ dataset, latestDataset }) {
                     <div className={'title'}>
                         <div className={'text'}>Historical Data</div>
                     </div>
+                    <p className='med-text'> Here you can toggle through each country and change the range of time you wish to see for confirmed, deaths, and recovered cases of Covid19. <br></br> <p className='small-text'>Bear in mind recovery data was stopped at the beginning of 2022.</p></p>
                     <div className={'buttonsGrp'}>
                         <Selection updateCountry={updateCountry} updateDays={updateDays} country={country} days={days}
                             countries={countries} maxDays={maxDays} /></div>
