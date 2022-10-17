@@ -3,7 +3,7 @@ import Timeline from "./charts/Timeline/Timeline";
 import Line from "./charts/Line/Line";
 import Bar from "./charts/Bar/Bar";
 import World from "./charts/World/World";
-import Selection from "./charts/Builder Components/Selection";
+import Selection from "./charts/BuilderComponents/Selection";
 import Loading from "./Loading";
 
 function Charts({ dataset, latestDataset }) {
