@@ -26,6 +26,9 @@ function World({inputData, types}) {
                 <div className={'title'}>
                     <div className={'text'}>Global Visualization</div>
                 </div>
+                <p>Chart Under Construction</p>
+                <p className='small-text'>For now Do not click any country or it will crash the website</p>
+                <p className='med-text'>Intention: To be able to click a country and zoom in to see the cases within the country</p>
                 <div className={'buttonsGrp'}>
                     <ChildSelection types={types} btnClick={updateType} selected={type}/>
                 </div>
