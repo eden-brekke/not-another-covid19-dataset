@@ -21,6 +21,11 @@ header {
   color: $light;
 }
 
+.small-text {
+  font-size: calc(3px + 1vmin);
+  font-style: italic;
+}
+
 header > a {
   justify-self: end;
   background: url("../Images/github.png") center;
@@ -133,7 +138,7 @@ blockquote {
     color: $light
   }
   50% {
-    color: #FF9999
+    color: #f7cfe1
   }
 
   100% {
