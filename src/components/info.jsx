@@ -21,7 +21,10 @@ export default function Info({count}) {
 
 
                 <CountUp end={count.recovered}
-                        separator=","/></p> <p> Recovered</p>
+                        separator=","/></p> 
+                        <p> Recovered<br></br>
+                        <p className='small-text'> A note that Recovered Data was ceased at the start of year 2022</p></p>
+                
                 <div className='r box'>
 
                 </div>
