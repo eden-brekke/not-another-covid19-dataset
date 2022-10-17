@@ -2,6 +2,8 @@
 
 [Deployed Site](https://eden-covid19-viz.netlify.app/)
 
+![screentshot](./src/Assets/Images/Screenshot.png)
+
 This is a data visualization using the [Pomber API](https://github.com/pomber/covid19) that gathers data from [CSSEGIS](https://github.com/CSSEGISandData/COVID-19) and updates daily with Covid19 case information.
 
 It was built using React, D3.js and styled with SASS.  
