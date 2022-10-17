@@ -1,6 +1,6 @@
 # Not Another Covid19 Dataset
 
-[Deployed Site](eden-covid19-viz.netlify.app)
+[Deployed Site](https://eden-covid19-viz.netlify.app/)
 
 This is a data visualization using the [Pomber API](https://github.com/pomber/covid19) that gathers data from [CSSEGIS](https://github.com/CSSEGISandData/COVID-19) and updates daily with Covid19 case information.
 
