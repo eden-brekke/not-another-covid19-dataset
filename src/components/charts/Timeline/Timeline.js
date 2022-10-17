@@ -63,11 +63,13 @@ function Race({inputData, startDate, endDate, types}) {
                 <div className={'title'}>
                     <div className={'text'}>Covid19 Case Timeline</div>
                 </div>
+                <p className='med-text'>Here you can watch how Covid19 cases have progressed from when the pandemic started to today. <br></br>
+                You can watch confirmed, deaths, or recovered. <br></br><p className='small-text'>Bear in mind recovery data was stopped at the beginning of 2022.</p></p> 
                 <div className={'buttonsGrp'}>
                     <div className={'buttons'}>
-                        <button onClick={resetGraph} value='start' className={'blueBtn'}>begin</button>
+                        <button onClick={resetGraph} value='start' className={'blueBtn'}>Start Timeline</button>
                         <button onClick={resetGraph} value='pause'>pause/play</button>
-                        <button onClick={resetGraph} value='end' className={'redBtn'}>end</button>
+                        <button onClick={resetGraph} value='end' className={'redBtn'}>End of Timeline</button>
                     </div>
                     <ChildSelection types={types} btnClick={updateType} selected={type}/>
 
