@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import RaceChart from "./RaceChart";
-import useInterval from "../../CutomHooks/useInterval";
+import RaceChart from "./TimelineChart";
+import useInterval from "../../CustomHooks/useInterval";
 import ChildSelection from "../Builder Components/ChildSelection";
 import Loading from "../../Loading";
 
@@ -61,7 +61,7 @@ function Race({inputData, startDate, endDate, types}) {
         <div className='raceD'>
             <div className={'titleWrapper'}>
                 <div className={'title'}>
-                    <div className={'text'}> World Race Chart</div>
+                    <div className={'text'}>Covid19 Case Timeline</div>
                 </div>
                 <div className={'buttonsGrp'}>
                     <div className={'buttons'}>
