@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import WorldMap from "./WorldMap";
 import land from './world.json'
-import ChildSelection from "../Builder Components/ChildSelection";
+import ChildSelection from "../BuilderComponents/ChildSelection";
 import Loading from "../../Loading";
 
 function World({inputData, types}) {
@@ -11,6 +11,9 @@ function World({inputData, types}) {
     useEffect(() => {
         setData(inputData)
         setType(types[0])
+        console.log(types)
+        console.log(inputData)
+        console.log(land)
     }, [inputData, types])
     const updateType = (e) => {
         e.preventDefault()

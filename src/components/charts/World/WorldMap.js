@@ -15,16 +15,16 @@ function WorldMap({data, type, world}) {
         if (!dimensions) return
         const svg = select(svgRef.current)
         const colorRange = {
-            confirmed: ['#ffffff', '#5777C0', '#365BB0'],
-            deaths: ['#ffffff', '#FF6464', '#FF3939'],
-            recovered: ['#ffffff', '#55D955', '#2FCF2F']
+            confirmed: ['#ffffff', '#a7d1d6', '#7dbbc3'],
+            deaths: ['#ffffff', '#c6aec1', '#c29fb7'],
+            recovered: ['#ffffff', '#b9e0a2', '#88ad7d']
         }
         const midRange = {
             confirmed: 30000,
             deaths: 5000,
             recovered: 20000
         }
-
+        console.log(world)
         const minV = min(Object.entries(data), d => d[1][0][type]);
         const maxV = max(Object.entries(data), d => d[1][0][type]);
 

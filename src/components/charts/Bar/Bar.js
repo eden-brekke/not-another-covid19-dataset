@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import BarChart from "./BarChart";
-import ChildSelection from "../Builder Components/ChildSelection";
+import ChildSelection from "../BuilderComponents/ChildSelection";
 import Loading from "../../Loading";
 
 function Bar({inputData, days, types, classes}) {

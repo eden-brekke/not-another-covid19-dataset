@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import RaceChart from "./TimelineChart";
 import useInterval from "../../CustomHooks/useInterval";
-import ChildSelection from "../Builder Components/ChildSelection";
+import ChildSelection from "../BuilderComponents/ChildSelection";
 import Loading from "../../Loading";
 
 function Race({inputData, startDate, endDate, types}) {
