@@ -6,8 +6,7 @@ export default function Header({count}){
   return (
     <>
     <header>
-            <a href="https://github.com/eden-brekke/covid19-data" className='icon'>
-
+            <a href="https://github.com/eden-brekke/not-another-covid19-dataset" className='icon'>
             </a>
             <div className='heading'>
                 <Bat className="bat"/>
