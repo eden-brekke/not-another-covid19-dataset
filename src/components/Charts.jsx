@@ -1,12 +1,12 @@
-import React, {useEffect, useState} from 'react';
-import Race from "./charts/Race/Race";
+import React, { useEffect, useState } from 'react';
+import Timeline from "./charts/Timeline/Timeline";
 import Line from "./charts/Line/Line";
 import Bar from "./charts/Bar/Bar";
 import World from "./charts/World/World";
 import Selection from "./charts/Builder Components/Selection";
 import Loading from "./Loading";
 
-function Charts({dataset, latestDataset}) {
+function Charts({ dataset, latestDataset }) {
 
     const [data, setData] = useState({})
     const [startDate, setStartDate] = useState(null)
@@ -23,7 +23,7 @@ function Charts({dataset, latestDataset}) {
     })
 
     useEffect(() => {
-        const defaultCountry = 'Canada'
+        const defaultCountry = 'US'
 
 
         const defaultCountryObj = dataset[defaultCountry];
@@ -45,10 +45,10 @@ function Charts({dataset, latestDataset}) {
     const updateDays = (e) => setDays(e.target.value)
 
 
-    if (Object.keys(data).length < 1) return <Loading/>
+    if (Object.keys(data).length < 1) return <Loading />
     return (
         <div className='charts'>
-            <Race inputData={data} startDate={startDate} endDate={endDate} types={types}/>
+            <Timeline inputData={data} startDate={startDate} endDate={endDate} types={types} />
             <div className='lbD'>
                 <div className={'titleWrapper'}>
                     <div className={'title'}>
@@ -56,15 +56,15 @@ function Charts({dataset, latestDataset}) {
                     </div>
                     <div className={'buttonsGrp'}>
                         <Selection updateCountry={updateCountry} updateDays={updateDays} country={country} days={days}
-                                  countries={countries} maxDays={maxDays}/></div>
+                            countries={countries} maxDays={maxDays} /></div>
                 </div>
                 <div className='libDCharts'>
-                    <Line inputData={data[country]} days={days} types={types} classes={classes}/>
-                    <Bar inputData={data[country]} days={days} types={types} classes={classes}/>
+                    <Line inputData={data[country]} days={days} types={types} classes={classes} />
+                    <Bar inputData={data[country]} days={days} types={types} classes={classes} />
                 </div>
             </div>
 
-            <World inputData={latestDataset} types={types}/>
+            <World inputData={latestDataset} types={types} />
         </div>
     );
 }
